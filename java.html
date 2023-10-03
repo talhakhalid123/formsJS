@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/tanuzoxure/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+
+<head>
+    <meta http-equiv='content-type' content='text/html;charset=utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Table</title>
+</head>
+
+<body>
+
+    <div class="search-bar">
+        <h1>Please Enter Data</h1>
+        <div class="bar-search">
+            <input type="text" name="search" id="search" onkeyup="searchTable()" title="Type in a name" placeholder="Search">
+            <span class="search-icon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </span>
+        </div>
+    </div>
+    <div id="my-form">
+        <label for="name"><h5> Name </h5></label>
+        <div class="icons-field">
+            <span><i class="fa-solid fa-signature"></i></span>
+            <input class="icons" id="name" type="text" name="name" placeholder="Enter Name" />
+        </div><br><br>
+
+        <label for="job"><h5> Job Title </h5></label>
+        <div class="icons-field">
+            <span><i class="fa-solid fa-briefcase"></i></span>
+            <input class="icons" id="job" type="text" name="job" placeholder="Enter Job Title" />
+        </div><br><br>
+
+        <label for="mobile"><h5> Mobile No. </h5></label>
+        <div class="icons-field">
+            <span><i class="fa-solid fa-mobile-button"></i></span>
+            <input class="icons" id="mobile" type="text" name="mobile" placeholder="Enter Mobile No." />
+        </div><br><br>
+
+        <button type="submit" id="button-sb" onclick="myFunction()" value="Save/Show">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Save/Show
+            </a></button>
+    </div>
+
+    <table id="list" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Job Title</th>
+                <th>Mobile No.</th>
+            </tr>
+        </thead>
+        <tbody id="putHere">
+            <tr id="items"> </tr>
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>

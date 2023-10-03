@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bar-search,
+.icons-field {
+    position: relative;
+}
+
+.bar-search .search-icon {
+    padding: 15px 5px;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+}
+
+.icons-field span {
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+
+#search {
+    padding: 15px 20px;
+}
+
+.icons {
+    width: 100%;
+    padding: 15px 30px;
+}
+
+table#list {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+table#list #putHere {
+    color: #333;
+    font-size: 0;
+}
+
+table#list #putHere tr {
+    color: #fff;
+    font-size: 16px;
+}
+
+table#list tr th,
+table#list tr td {
+    width: 33%;
+    padding: 10px;
+}
+
+
+/* #button-sb {
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+} */
+
+button[type="submit"] {
+    /* width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Comfortaa', cursive; */
+    /* color: rgba(255, 255, 255, 0.5); */
+    /* color: red;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 0) 5%, rgba(255, 255, 255, .5) 6%, rgba(255, 255, 255, 0) 9%, rgba(255, 255, 255, .5) 10%, rgba(255, 255, 255, 0) 17%, rgba(255, 255, 255, .5) 19%, rgba(255, 255, 255, 0) 21%);
+    background-size: 150%;
+    background-position: right;
+    transition: 1s; */
+    background: none;
+    border: none;
+}
+
+
+/* button[type="submit"]:hover {
+    background-position: left;
+    /* color: white; */
+
+color: green;
+box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+0px 0px 10px rgba(0, 0, 0, 0.25);
+
+}
+*/ button[type="submit"]:focus {
+    outline: none;
+}
